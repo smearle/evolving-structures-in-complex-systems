@@ -1,6 +1,8 @@
 #include <assert.h>
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
+#include <float.h>
 #include "nn.h"
 #ifdef __APPLE__
 #include <Accelerate/Accelerate.h>

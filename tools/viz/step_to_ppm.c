@@ -4,9 +4,10 @@
  * gcc step_to_ppm.c -o step_to_ppm -lnetpbm
  */
 
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-#include <netpbm/pam.h>
+#include <pam.h>
 
 #define CHANNELS 3
 

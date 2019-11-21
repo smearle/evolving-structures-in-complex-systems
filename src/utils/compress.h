@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdint.h>
 
 #ifndef COMPRESS_H   /* Include guard */
 #define COMPRESS_H

@@ -1,7 +1,7 @@
 CC=gcc
 LD=gcc
 CFLAGS=-Isrc -Wall -O3 -march=native -funroll-loops -ffast-math -flto=thin
-LDFLAGS=-Wall -lz  -framework Accelerate -lgsl -O3 -flto=thin
+LDFLAGS=-Wall -lz -lgsl -O3 -flto=thin
 
 SRCDIR:=src
 BUILDDIR:=build
@@ -23,7 +23,7 @@ all: directories $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(MKDIR) $(BINDIR)
-	$(LD) $(LDFLAGS) $+ -o $@
+	$(LD) $(LDFLAGS) $+ -o $@ -lblas -lm -lz -lgsl
 
 .PHONY: directories
 directories:
